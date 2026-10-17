@@ -3,6 +3,52 @@
     <channel>
         <title>Nook</title>
         <item>
+            <title>0.3.2</title>
+            <pubDate>Sat, 17 Oct 2026 08:55:26 -0400</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:version>71</sparkle:version>
+            <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
+body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+h2{font-size:14px;font-weight:600;margin:16px 0 4px}
+h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+p{margin:0 0 8px}
+ul{margin:0 0 8px;padding-left:18px}
+li{margin:0 0 4px}
+li::marker{color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+code{font:12px ui-monospace,monospace}
+.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
+.announce p:last-child{margin:0}
+.announce strong{color:var(--accent)}
+body>:first-child{margin-top:0}</style>
+<div class="announce"><p><strong>Pelmet is now Dimble.</strong> Another macOS menu bar app had the name Pelmet first, so I decided to rename ours. It's the same app, and your settings, permissions and launch at login carry over. On its first launch after the update, the app renames itself to Dimble.app and opens again.</p><p>If anything looks off after the update, please tell me on GitHub.</p></div>
+<p>The one you asked for most is here, your hidden icons in a panel under the menu bar. There's also a new Settings, icons that show up only when they matter, and every fix from eight betas.</p>
+<h2>The panel</h2>
+<p>Hidden icons can open as tiles in a glass panel under the menu bar, and a click on a tile opens that icon's real menu. Turn it on in Settings › Panel › "Show hidden icons in" and pick Panel, or Row for a single strip. Menu bar stays the default.</p>
+<ul><li>The tiles are pictures of your real icons. App icons stand in when Screen Recording isn't allowed. Apple's own items like Bluetooth or Focus show their own mark until they get a picture.</li><li>Open it with a click, a hover or the shortcut. Type to search, move with the arrows and Return, Esc to close. It closes when the pointer leaves, like the bar does.</li><li>It opens on the display you click or hover, right under that display's bar.</li><li>Drag a tile to reorder it, to another section, or up onto the menu bar to show it there. ⌘-drag an icon from the menu bar onto the panel to hide it.</li><li>Always Hidden sits behind a fold you click. A "Didn't fit" section lists the icons macOS had no room for in the bar.</li><li>Right-click a tile for Open Menu, Show in Menu Bar (just that icon, and it goes back after), Move to…, Alias and Shortcut… and Quit.</li><li>Drag the panel's left edge for more or fewer columns, double-click it for Auto. Names can be shown too.</li></ul>
+<p>Thanks @elijah7x for asking for it (<a href="https://github.com/fif7y/dimble/issues/26">#26</a>), and @cpierce, @OiCkilL and @2f4vwwb5t6-gif for testing it through the betas.</p>
+<h3>New</h3>
+<ul><li>Settings got a full redesign. Menu Bar now holds everything about your icons, and a click on any tile there opens its options. General has every shortcut in one place, and permissions you've already granted fold into one quiet line. Apply only shows up when there's something to apply.</li><li>Show when it matters, for icons you keep hidden (<a href="https://github.com/fif7y/dimble/issues/86">#86</a>, thanks @pzelnip). Battery shows while you're on battery or below 20%, Wi-Fi when it isn't connected, Focus while a Focus is on and Time Machine while a backup runs. Turn each one on in Settings › Menu Bar.</li><li>Icons stay in their section. macOS sometimes drops a hidden icon right of the chevron, after a ⌘-drag or when an app relaunches into a crowded bar. Dimble moves it back on its own once you leave the mouse and keyboard alone for a couple of seconds. This needs Dimble's icon in the menu bar (<a href="https://github.com/fif7y/dimble/issues/80">#80</a>, thanks @Erimus-Koo).</li><li>An icon you drop into Hidden or Always Hidden in Settings crosses the arrow on its own a few seconds later, no Apply needed.</li><li>Shortcuts can be turned off. Hover one in Settings and click the ×, or press ⌫ while recording, so another app can have the combo. ↺ brings the default back (<a href="https://github.com/fif7y/dimble/issues/79">#79</a>, thanks @gasparschott).</li><li>Media controls comes and goes while something plays, like Camera &amp; mic, with a While playing or Always choice. Sounds under 5 seconds don't count, so a screenshot shutter doesn't bring it out.</li><li>Search has its own tab in Settings, with a command bar to try it in and your aliases and shortcuts. Alias and Shortcut… on any icon opens it with that icon ready.</li><li>The right-click menu on Dimble's icon leads with Search and Settings, and shows the shortcuts for Hide Items and Show Always Hidden Too.</li><li>Release notes show up in the update window, and About has a "What's new in this version" link.</li></ul>
+<h3>Changed</h3>
+<ul><li>Pelmet is now Dimble. On its first launch after the update, the app renames itself from Pelmet.app (or Pliss.app if you ran 0.3.2-beta.7) to Dimble.app and opens again.</li><li>The app icon is a D now, same dots.</li><li>Logs are now in ~/Library/Logs/Dimble/dimble.log, and your old logs move there too.</li><li>The website is <a href="https://dimble.fif7y.com">dimble.fif7y.com</a> and the repo is github.com/fif7y/dimble. Old links keep working.</li><li>If you installed with Homebrew, the cask is <code>dimble</code> now. Once the app has updated itself, quit it, run <code>brew reinstall --cask --force fif7y/tap/dimble</code> once, and open Dimble again.</li></ul>
+<h3>Fixed</h3>
+<ul><li>A double-click on the chevron reveals Always Hidden too, like the settings say. It only worked in empty menu bar space, and on the chevron the second click shut the bar again (<a href="https://github.com/fif7y/dimble/issues/77">#77</a>, thanks @kaypeter87).</li><li>⌥-click on the chevron reveals Always Hidden on macOS 27 too. macOS 27 wasn't saying the ⌥ key was down, so it acted like a plain click.</li><li>Clicking the clock opens Notification Center again on macOS 27.2, where it flashed open and closed right away. It also opens on Macs where the app thought it was already open (<a href="https://github.com/fif7y/dimble/issues/81">#81</a>, thanks @2f4vwwb5t6-gif). A second ⌥⌘N closes it for good.</li><li>Hover reveal works on the first visit after you hide icons with the shortcut or from a menu. The hover zone also ends at the chevron as it's drawn (<a href="https://github.com/fif7y/dimble/issues/84">#84</a>, thanks @swhitlow).</li><li>Icons that come from a helper app take the app's name. Fantastical showed up as 85C27NK92C… (<a href="https://github.com/fif7y/dimble/issues/81">#81</a>, thanks @2f4vwwb5t6-gif).</li><li>An icon you move to Visible crosses the arrow on its own on a bar with none of Dimble's own icons on it. It used to wait for them forever (<a href="https://github.com/fif7y/dimble/issues/81">#81</a>, thanks @2f4vwwb5t6-gif).</li><li>Reordering inside Hidden or Always Hidden applies. When two moves would do, Apply moves the icon you dropped and not its neighbour.</li><li>An icon you ⌘-drag stays where you dropped it, past one of Dimble's own icons or on another display's bar.</li><li>Clicks open menus again after an Apply. The app could leave ⌘ held after its last drag.</li><li>Hidden icons hide again on their own after the app starts with the screen locked. The media control gets placed again after a track change on a locked screen.</li></ul>
+<h3>Also</h3>
+<ul><li>The Apply button goes grey once the menu bar matches your settings. The "Your menu bar is full" note is now "N behind «" at the top of the Menu Bar pane, and only shows while the bar stays full.</li><li>A locked Mac no longer reads the menu bar every 2 seconds all night.</li></ul>
+]]></description>
+            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.2/Dimble-0.3.2.dmg" length="5455805" type="application/octet-stream" sparkle:edSignature="xnA80cJSavVDF28lHrUxnwGU18kPb4CrJxFwhPkAQZ0LsjHi/xQu9oocytxnNz/WV8HysfrB3HcnoqzQO7klDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.2/Dimble71-70.delta" sparkle:deltaFrom="70" length="19210" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5lCf7dXrVkTV3andUci3lWcbw38fjAHcAgH8y7pg3f8va2bXYUatcI2QF+LrMRsh7hHntFDuAg+5AmLWzCQlCA=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.2/Dimble71-69.delta" sparkle:deltaFrom="69" length="2352222" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UkuB+ODoIqxBeNMYgCMH77Cze2x74oBtUHIyF3o1g/GY/9/I/MoGZKXHOeMHGMwQX4p3z1GpRAtptjrQ27xDBA=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.2/Dimble71-68.delta" sparkle:deltaFrom="68" length="2349802" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9WaZ39g3fa+f+rIYYUB6Wu8frdst6eTO7EaiPtE+l7xNCsHZClBS9vqZ+h1lt17Q7tBMdU8nmyEXiIGxjSVUBQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.2/Dimble71-67.delta" sparkle:deltaFrom="67" length="2349974" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="/TFpbWwz7s/aQ5xXKbHcMykPrsFXG2uguo8smpTwjP1niq3xLig4DYo2hrgImcoJfcGTfT8ETTVZhy2pAqIWDg=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.2/Dimble71-66.delta" sparkle:deltaFrom="66" length="2370806" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="niFK+XqUw/4tiIjzskeLmHlmx9K8ZeAl88qPiGbNnmzWPRNgC1PBgBQemlkngI4n+9R9T291QVmq7O8c4xNPAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.2-beta.8</title>
             <pubDate>Fri, 16 Oct 2026 21:24:44 -0400</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
@@ -41,84 +87,6 @@ body>:first-child{margin-top:0}</style>
             </sparkle:deltas>
         </item>
         <item>
-            <title>0.3.2-beta.7</title>
-            <pubDate>Wed, 14 Oct 2026 20:09:03 -0400</pubDate>
-            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/pelmet/releases</sparkle:fullReleaseNotesLink>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>69</sparkle:version>
-            <sparkle:shortVersionString>0.3.2-beta.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
-@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
-body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
-h2{font-size:14px;font-weight:600;margin:16px 0 4px}
-h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
-p{margin:0 0 8px}
-ul{margin:0 0 8px;padding-left:18px}
-li{margin:0 0 4px}
-li::marker{color:var(--muted)}
-a{color:var(--accent);text-decoration:none}
-code{font:12px ui-monospace,monospace}
-.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
-.announce p:last-child{margin:0}
-.announce strong{color:var(--accent)}
-body>:first-child{margin-top:0}</style>
-<div class="announce"><p><strong>Pelmet is now Pliss.</strong> Another macOS menu bar app had the name Pelmet first, so I decided to rename ours before the stable release. It's the same app, and your settings, permissions and launch at login carry over. On its first launch after the update, the app renames itself from Pelmet.app to Pliss.app and opens again.</p><p>If anything looks off after the rename, please tell me on GitHub.</p></div>
-<h3>Changed</h3>
-<ul><li>The app and its Settings say Pliss in all ten languages. About keeps a small "formerly Pelmet" line.</li><li>Logs are now in ~/Library/Logs/Pliss/pliss.log, and your old Pelmet logs move there too.</li><li>Updates come from a new feed address. Nothing to do on your side.</li></ul>
-<h3>New</h3>
-<ul><li>Time Machine, VPN, AirDrop and Siri tiles show their own mark while they wait for a picture, instead of a dashed circle (<a href="https://github.com/fif7y/pelmet/issues/26">#26</a>, thanks @cpierce).</li></ul>
-<h3>Fixed</h3>
-<ul><li>Clicking the clock should open Notification Center again on Macs where the app thought it was already open (<a href="https://github.com/fif7y/pelmet/issues/81">#81</a>, thanks @2f4vwwb5t6-gif).</li><li>Panel tile pictures should be sharp on a non-Retina display. Thin lines smeared into a grey edge (<a href="https://github.com/fif7y/pelmet/issues/81">#81</a>, thanks @2f4vwwb5t6-gif).</li><li>Settings opens a little taller, so About fits without a scroll.</li></ul>
-]]></description>
-            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.2-beta.7/Pliss-0.3.2-beta.7.dmg" length="5445495" type="application/octet-stream" sparkle:edSignature="/Xp+S4XILQYOS5UtWkpoGf99UIrHNsaoVRXvbxh4hQ4lR5iRqsgU13DnUdcbcAHC0DUsDUt9nSG8zmIHDNPfBA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.7/Pliss69-68.delta" sparkle:deltaFrom="68" length="1528682" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hWVadrxfs14g/NHyhUjOt4C4Ta10RHLTcmcb5VBw3K0uQSIdDUTMEZZmIU+65TJ/YaqaI6P6g1vBlBdTuZbVBA=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.7/Pliss69-67.delta" sparkle:deltaFrom="67" length="1529970" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="je0uSe7lhySv4ufBcoOuNB+hsCvjYI2mOU7Dd3GXLOVJI4BxyOcrGmkPtRuYoft0FvI/71TEs4kQZHIbc4VODQ=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.7/Pliss69-66.delta" sparkle:deltaFrom="66" length="1550478" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rUMFwcKCuSFpGmr1e0CbEBueEU+XMSAIXxfwCnhPsGHwKuEi/rHoFw+7e/iIjwNVVs6JBV4o509dnEN8kd0jAA=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.7/Pliss69-65.delta" sparkle:deltaFrom="65" length="1550446" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="K75Otbum3pezv8bzz9gYhIho+aQnW+P1FqHsibHohuyHiqIRDGgD/uMNbw/0LkrXpTEFToC7IWAub48okF5kAg=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.7/Pliss69-64.delta" sparkle:deltaFrom="64" length="1574922" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jSIfFO2+ZkAHBitWFB8fAhoU31WXSNkl+xF0yGdws0b2oHqS6Vm/I7pN6ES9SkwvC8btHTU0JkqtWSMUzGBoDw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.3.2-beta.6</title>
-            <pubDate>Wed, 14 Oct 2026 00:28:36 -0400</pubDate>
-            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/pelmet/releases</sparkle:fullReleaseNotesLink>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>68</sparkle:version>
-            <sparkle:shortVersionString>0.3.2-beta.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
-@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
-body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
-h2{font-size:14px;font-weight:600;margin:16px 0 4px}
-h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
-p{margin:0 0 8px}
-ul{margin:0 0 8px;padding-left:18px}
-li{margin:0 0 4px}
-li::marker{color:var(--muted)}
-a{color:var(--accent);text-decoration:none}
-code{font:12px ui-monospace,monospace}
-.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
-.announce p:last-child{margin:0}
-.announce strong{color:var(--accent)}
-body>:first-child{margin-top:0}</style>
-<div class="announce"><p><strong>The panel works on every display now.</strong> It opens on the display you click or hover, right under that display's bar. A tile there opens its icon's menu on the same bar. The rest is mostly fixes from a full review of 0.3.2 before it goes stable.</p><p>If you run Pelmet with more than one display, I'd love to hear how it does there.</p></div>
-<h3>New</h3>
-<ul><li>The panel opens on the display you clicked or hovered, under an external display's taller bar too. A shortcut opens it on the display under the pointer (<a href="https://github.com/fif7y/pelmet/issues/26">#26</a>, thanks @cpierce).</li><li>A tile pressed in the panel on another display opens the icon's menu on that display's bar (<a href="https://github.com/fif7y/pelmet/issues/26">#26</a>, thanks @cpierce).</li><li>Turn an app's own menu bar icon off and its tile leaves the panel and the row. It's back when you turn the icon on again. CleanShot kept its tile with its icon off (<a href="https://github.com/fif7y/pelmet/issues/26">#26</a>, thanks @cpierce).</li><li>Bluetooth, Display, Focus, Now Playing and the user menu show their own mark while their tile waits for a picture, instead of a dashed box (<a href="https://github.com/fif7y/pelmet/issues/26">#26</a>, thanks @cpierce).</li></ul>
-<h3>Fixed</h3>
-<ul><li>Panel tiles keep their picture while Pelmet takes a new one. They turned into colour app icons for a second every 15 minutes (<a href="https://github.com/fif7y/pelmet/issues/81">#81</a>, thanks @2f4vwwb5t6-gif).</li><li>The line under every panel tile on some displays should be gone. Pelmet now films only as tall as the bar itself (<a href="https://github.com/fif7y/pelmet/issues/81">#81</a>, thanks @2f4vwwb5t6-gif).</li><li>A panel or popover that hangs a couple of points into the bar (Snib's does) no longer draws a line under a tile.</li><li>An icon you drop into Hidden or Always Hidden in Settings crosses the arrow on its own a few seconds later, instead of waiting for Apply.</li><li>The Apply button keeps its count through a reveal or a drop. A reorder in a hidden section counts once, and an icon dragged out and back to its own spot doesn't count at all.</li><li>An icon you ⌘-drag stays where you dropped it, past one of Pelmet's own icons or on another display's bar.</li><li>Clicks open menus again after an Apply. Pelmet could leave ⌘ held after its last drag.</li><li>Hide again offers half a second again, so a 0.5s delay doesn't snap to 1 second anymore.</li><li>If you upgraded with Focus showing, it keeps coming out while a Focus is on. Wi-Fi's grace period starts over after sleep.</li><li>Typing into the command bar or a Settings field stays there with a hover panel open, and a held key never sticks.</li><li>Recording a shortcut stays in its field, and an alias keeps what you type.</li><li>A second ⌥⌘N closes Notification Center for good.</li><li>A locked Mac no longer reads the menu bar every 2 seconds all night.</li></ul>
-]]></description>
-            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.2-beta.6/Pelmet-0.3.2-beta.6.dmg" length="5435305" type="application/octet-stream" sparkle:edSignature="FicEb4hKZcz2lutq6jHvdQMkGdJ5utYtpO2rSjl1SKRewc2OwgUPzAs1hQTYupy0zcYTTGoSDwLO78XD7r0tDg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.6/Pelmet68-67.delta" sparkle:deltaFrom="67" length="788730" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jpj3rx7JSyZMl0ZxHhrTvrnh43Sxc8T9JEIFGP22k72gBuNxXGshpmT9vimeXmvmAiv2evwwdjlqosDKDljtBQ=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.6/Pelmet68-66.delta" sparkle:deltaFrom="66" length="1029846" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="PbHqD6sw4m6X3ZJLPbi626pIHJbR9QIAgwkbVSdqAK+cpH4xCJp0zkSfQNpevMZD/VvmD9v9v5SHXZjTx/dJBw=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.6/Pelmet68-65.delta" sparkle:deltaFrom="65" length="1032406" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="cEhiZlsxwe2tj8/wn+Rg7w1634GRb+rWvu44aaagAbmTbcNXQxvApNrcTKVFZlKUe/Bsi779uanA9KOSkyPrCA=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.6/Pelmet68-64.delta" sparkle:deltaFrom="64" length="1301034" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="16DYeqb0qVDsBe2qYXO5wAOyErJixkolCSQxkhaYI5Hss5wGuBr9ZUMwiEj54PDlhXPHSTPZiBRNJL9vm4PuDg=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.2-beta.6/Pelmet68-63.delta" sparkle:deltaFrom="63" length="1342990" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="acENsf19L/5exvducrTvl++FGC2Pwc548FYDjs5jNNsSppxL0rwHLnPt6ida4H4UtK341teq8318cZ1YV/2gBQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
             <title>0.3.1</title>
             <pubDate>Mon, 05 Oct 2026 15:59:49 -0400</pubDate>
             <sparkle:version>62</sparkle:version>
@@ -146,21 +114,6 @@ body>:first-child{margin-top:0}</style>
                 <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.0/Pelmet56-53.delta" sparkle:deltaFrom="53" length="196062" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+HX9QXSJjTwsIUh9xd/glQ3giWJOSA4any2GM/6ZyhL/0rmFaFb4fRU0iHOfCEaSenoKUB7A+t0atpNKEh6ABA=="/>
                 <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.0/Pelmet56-52.delta" sparkle:deltaFrom="52" length="240046" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6ouiMBEcSFBVaqN9FSXqE91bjBFiXfukQNQCV4GuyUlX5kdzqHbod5jzob824Y5EwuSUHkBDdtiC7oxLq47jAw=="/>
                 <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.3.0/Pelmet56-51.delta" sparkle:deltaFrom="51" length="259290" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="CIbcb5HBvNOsQnPna4m/24ZPByK3s4ttQ5Ug/2p93JSijOf5hyg+NRfnRxOtPpu2hRugaUvhrvGx9t7nTBI9Cg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.2.41</title>
-            <pubDate>Mon, 21 Sep 2026 13:04:13 -0400</pubDate>
-            <sparkle:version>48</sparkle:version>
-            <sparkle:shortVersionString>0.2.41</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.2.41/Pelmet-0.2.41.dmg" length="2450152" type="application/octet-stream" sparkle:edSignature="9L7wcvkxZC9OiiNIHeCVrYFOdHVYHsdLDl3i5C5t1FV+uCj/bCydt1niZLTrXAWXlu6+AHaHd3RLdx++ID67AA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.2.41/Pelmet48-47.delta" sparkle:deltaFrom="47" length="549446" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1tdSwjjGVcLAfGKKtLe70F71RI+2Tmn4iXgvEhDU2TgVH1+LdAypSZVL2TCVLjnP+V/RkLGXVgbTdgSpxqA7Bg=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.2.41/Pelmet48-46.delta" sparkle:deltaFrom="46" length="629270" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2/guyAA9ZzJwBHjQv2cc1hwexyWx0Om+1OeyZS6t18V/r3N8epfLArdJHbvjMttqlA854xiv5ArY3Kd8GtxxAw=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.2.41/Pelmet48-45.delta" sparkle:deltaFrom="45" length="636278" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FlxIX0pjKAXVPnVXrBOn/SV4K94PGwACMy+SZbHahvTldtS5rJUn8C6KSXNp6UtqlsVTXcZKY6TRbqTuP4AjDw=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.2.41/Pelmet48-44.delta" sparkle:deltaFrom="44" length="659558" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5+UldpJBpAq8HU7qf3e1gGZIICa8sqalD1AFrK2s1HIxKAsdGs4fR8/6XXVDC6ii7gYmHk7KgAfbsk7NrGVfAw=="/>
-                <enclosure url="https://github.com/fif7y/pelmet/releases/download/v0.2.41/Pelmet48-43.delta" sparkle:deltaFrom="43" length="678234" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Bk7IZhcxyTWwEzGL5d9/XDhlajwKz+6gR9xjPwtZHavwDBI2bppGCAwO1u/L79+2sSjGHzGWRcy9gWOpydFTBg=="/>
             </sparkle:deltas>
         </item>
     </channel>
