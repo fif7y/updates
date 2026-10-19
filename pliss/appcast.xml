@@ -3,6 +3,43 @@
     <channel>
         <title>Nook</title>
         <item>
+            <title>0.3.3-beta.4</title>
+            <pubDate>Mon, 19 Oct 2026 18:23:46 -0400</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>75</sparkle:version>
+            <sparkle:shortVersionString>0.3.3-beta.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
+body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+h2{font-size:14px;font-weight:600;margin:16px 0 4px}
+h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+p{margin:0 0 8px}
+ul{margin:0 0 8px;padding-left:18px}
+li{margin:0 0 4px}
+li::marker{color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+code{font:12px ui-monospace,monospace}
+.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
+.announce p:last-child{margin:0}
+.announce strong{color:var(--accent)}
+body>:first-child{margin-top:0}</style>
+<h3>Added</h3>
+<ul><li>Each display can now show hidden icons its own way. In Settings › Displays, every display that hides icons gets a "Reveal in" picker. Your monitor can reveal in the menu bar while your MacBook uses the panel or a row (<a href="https://github.com/fif7y/dimble/issues/88">#88</a>, thanks @wyaqoob). Displays left on "Same as Panel tab" follow the choice in Settings › Panel.</li></ul>
+<h3>Fixed</h3>
+<ul><li>After closing the lid with external displays attached and opening it again, the chevron could go missing until Dimble relaunched. Dimble now checks the bar when your Mac wakes or the displays change, and puts the chevron back if it's gone (<a href="https://github.com/fif7y/dimble/issues/26">#26</a>, thanks @cpierce).</li></ul>
+]]></description>
+            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble-0.3.3-beta.4.dmg" length="5538204" type="application/octet-stream" sparkle:edSignature="HDeR06k7vtkZYiugluDZ3ecEeubnBOvhmXoaK2rTNCg19gphJMq2RwM+MS5Fs0wWSh6r6tKaCfs+zhpuyjLjDw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble75-74.delta" sparkle:deltaFrom="74" length="552446" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="qwOse/xfUSLf3x0vhI+/JJ/K81hrY+4E3OBZqkRLnKUhJ6Iy3S+vJI/5gPwJc+0TUsPzdaiLHClIgv/Tcr4TBA=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble75-73.delta" sparkle:deltaFrom="73" length="558398" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="d3sXL0vAYrT4PlvDMG87iXlhfYJZq0a8wVphdwom+88l2FhdoFRlvRNCip4+5PpLEn4iBDjAS+iRdhoTlzsWCw=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble75-72.delta" sparkle:deltaFrom="72" length="564390" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="z9g/DqHMLyr7JhgwIoENhYn52ih2QD9pplC7fyTNg2rbhOGZQ8cMB8wd8TLEsmcDLt44amWiflyY0XVYCj1tAg=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble75-71.delta" sparkle:deltaFrom="71" length="566882" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lhl6WK2i5CdkA9prPaAruPPCcPXzDZ05dFEKx/RnAl8ySWckS7WSDl24eR4eu36PkpATZWlQNY4FZZ3r2asNBw=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble75-70.delta" sparkle:deltaFrom="70" length="568690" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="g9p7kpHHUsHIixaYsUaUy2sRro3fFghRp6Nhh5vdKAJrF8guceR9upUieSVs9d1AvRYma3MLdjDsHux0+Ef9CA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.3-beta.3</title>
             <pubDate>Mon, 19 Oct 2026 09:34:38 -0400</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
@@ -72,43 +109,6 @@ body>:first-child{margin-top:0}</style>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.2/Dimble73-70.delta" sparkle:deltaFrom="70" length="257330" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="upuK9in5iqjftiF0q+V5ma8YoUlV/9db+ZfXwES0X9UAScU+LByQau2JGdKO6aJ7ckp9hho9UMy2hIRshLyiBw=="/>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.2/Dimble73-69.delta" sparkle:deltaFrom="69" length="2349430" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="aD9sdciIhd+K1SErpejHrcuJIteOBPY00oPrOLxPDP0TkOnC9AiYkxlNx1HI3BsvFBOhLtkBXE0xrEtUCdRKCQ=="/>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.2/Dimble73-68.delta" sparkle:deltaFrom="68" length="2347066" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="n5y5dRT8gV+DV7FD7OYX3IonzA0NnuK8NoD5H3AosIBlyWOg9yWvK63wmxo9Z+FoHKiZqB/ou8MbeWT8a/dXAQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.3.3-beta.1</title>
-            <pubDate>Sun, 18 Oct 2026 22:09:42 -0400</pubDate>
-            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>72</sparkle:version>
-            <sparkle:shortVersionString>0.3.3-beta.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
-@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
-body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
-h2{font-size:14px;font-weight:600;margin:16px 0 4px}
-h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
-p{margin:0 0 8px}
-ul{margin:0 0 8px;padding-left:18px}
-li{margin:0 0 4px}
-li::marker{color:var(--muted)}
-a{color:var(--accent);text-decoration:none}
-code{font:12px ui-monospace,monospace}
-.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
-.announce p:last-child{margin:0}
-.announce strong{color:var(--accent)}
-body>:first-child{margin-top:0}</style>
-<h3>Changed</h3>
-<ul><li>In Settings › Menu Bar › Show when it matters, an icon that sits in Visible now has a "Move to Hidden" link. It moves the icon and turns its rule on. Before, the switch was just greyed out (<a href="https://github.com/fif7y/dimble/issues/92">#92</a>).</li></ul>
-<h3>Fixed</h3>
-<ul><li>With the Clock hidden, clicking Control Center or the spot where the clock used to be no longer flashes your hidden icons on the bar. Those clicks go straight to Control Center now (<a href="https://github.com/fif7y/dimble/issues/93">#93</a>, thanks @punchmac).</li><li>⌥-click on the clock turns Do Not Disturb on and off again, the way it does without Dimble. It did nothing while icons were hidden (<a href="https://github.com/fif7y/dimble/issues/92">#92</a>, thanks @juanfcocontreras).</li></ul>
-]]></description>
-            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.1/Dimble-0.3.3-beta.1.dmg" length="5458032" type="application/octet-stream" sparkle:edSignature="JTH1TeaDMn19UNMNYSJ91muMXRPz1SIvmtodFt6fMf9DSG73jaCUUktD8vP3voJr8WU9NpkGucrf5TtaAO0JAw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.1/Dimble72-71.delta" sparkle:deltaFrom="71" length="252502" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="m97oztS2FktJmFcD1u5h2ConxuWjE18b2qmHB0Laa5m/XyMuoz6buTT/ePgDFMg2E3mHVYdfqdWYQkPPqWlwAQ=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.1/Dimble72-70.delta" sparkle:deltaFrom="70" length="248358" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="K6NXrwyUh04HWFI6sAg6ubauuNeDYDEu58TWe9HMxb0Bd24VF6yMIHZu6SX8+oedjls9JD/Iv07GC4CC8vBPAw=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.1/Dimble72-69.delta" sparkle:deltaFrom="69" length="2345990" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="7ylQ5hfU3r/tmZVvdQpWIGt+uGI7ES2RQJK3ySBVfGtYCKePpLhPguLIghnBKa3iGZn+VwoETAs0DlmYbJ+oAQ=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.1/Dimble72-68.delta" sparkle:deltaFrom="68" length="2344774" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xJmhkzBE4tlcucRaeqXsEJ4UBhiKFVytq4jVPlyQA2RIy/suwj+zj2i43/j4FRh3ilnLsEUd//p8kj1Jxh+yDA=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.1/Dimble72-67.delta" sparkle:deltaFrom="67" length="2346478" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ypZJb1NgBux9Sn4+X5v1ZWFE6l9Qscw04tuifXaVQlZGMkbRE1myR43rgeT86KM/5Wc4Tv/rFU6FR+0Of6mOAA=="/>
             </sparkle:deltas>
         </item>
         <item>
