@@ -3,6 +3,41 @@
     <channel>
         <title>Nook</title>
         <item>
+            <title>0.3.3-beta.6</title>
+            <pubDate>Wed, 21 Oct 2026 08:43:52 -0400</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>77</sparkle:version>
+            <sparkle:shortVersionString>0.3.3-beta.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
+body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+h2{font-size:14px;font-weight:600;margin:16px 0 4px}
+h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+p{margin:0 0 8px}
+ul{margin:0 0 8px;padding-left:18px}
+li{margin:0 0 4px}
+li::marker{color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+code{font:12px ui-monospace,monospace}
+.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
+.announce p:last-child{margin:0}
+.announce strong{color:var(--accent)}
+body>:first-child{margin-top:0}</style>
+<h3>Changed</h3>
+<ul><li>A display that shows all its icons now has its own "Show hidden icons in" in Settings › Displays. It picks where a chevron click there opens Always Hidden: the menu bar, a panel or a row. Before, it always followed the Panel tab (<a href="https://github.com/fif7y/dimble/issues/96">#96</a>, thanks @juanfcocontreras).</li><li>"Reveal in" in Settings › Displays is now "Show hidden icons in", the same name as in the menu and the Panel tab.</li></ul>
+]]></description>
+            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.6/Dimble-0.3.3-beta.6.dmg" length="5622395" type="application/octet-stream" sparkle:edSignature="IZMRz8QO6cSe/VEjC+jczwOU8dHO7NMwiKwVObCS4rioSNoB3NQNsbqrgKHcpTENsF5hMnfs4wacCEhbrLqmBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.6/Dimble77-76.delta" sparkle:deltaFrom="76" length="216162" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6xFtxFkzTPVxo3A6j6Wfl+AjjiSKJB/s5bFLTvhvmwUu13NsrD08T/8zTS5POPJEXpl2w39uVaK5HMhh6NujCQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.6/Dimble77-75.delta" sparkle:deltaFrom="75" length="485950" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="YzhpiNWyHhLb4a43mcMTTdK2mwpu2cTt1hORppRR2U+A6HYwa26XlZGa4zCu2xAYAFQMWsMNXeHszS8+YO6vAA=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.6/Dimble77-74.delta" sparkle:deltaFrom="74" length="666170" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gDEv3SSNmCtDT37PHRl/QZAs5ylD7SlwHy1ivJa7KZwpAf1837dNyw5XzR2Fm1XfTHwn1IFfhwDZQNzNlWAkDQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.6/Dimble77-73.delta" sparkle:deltaFrom="73" length="676546" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="JDoCUeb7Ala1haOsTt3/FekEv3nOQ3MLi6SJ/4vdEWvOofnB8dpd4eZ5kUipkyw6JGPEIoh0ts7Pv3cVLLG6CA=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.6/Dimble77-72.delta" sparkle:deltaFrom="72" length="677954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="z4wDadCDZsMp6ibbfS9RQIagyTcNu6BXJWMfYBEhu//wWw4iATujE6KpkmPDKvPQVYkgSUCcKSKdGegzJ64VCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.3-beta.5</title>
             <pubDate>Tue, 20 Oct 2026 22:09:24 -0400</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
@@ -77,43 +112,6 @@ body>:first-child{margin-top:0}</style>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble75-72.delta" sparkle:deltaFrom="72" length="564390" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="z9g/DqHMLyr7JhgwIoENhYn52ih2QD9pplC7fyTNg2rbhOGZQ8cMB8wd8TLEsmcDLt44amWiflyY0XVYCj1tAg=="/>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble75-71.delta" sparkle:deltaFrom="71" length="566882" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lhl6WK2i5CdkA9prPaAruPPCcPXzDZ05dFEKx/RnAl8ySWckS7WSDl24eR4eu36PkpATZWlQNY4FZZ3r2asNBw=="/>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.4/Dimble75-70.delta" sparkle:deltaFrom="70" length="568690" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="g9p7kpHHUsHIixaYsUaUy2sRro3fFghRp6Nhh5vdKAJrF8guceR9upUieSVs9d1AvRYma3MLdjDsHux0+Ef9CA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.3.3-beta.3</title>
-            <pubDate>Mon, 19 Oct 2026 09:34:38 -0400</pubDate>
-            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>74</sparkle:version>
-            <sparkle:shortVersionString>0.3.3-beta.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
-@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
-body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
-h2{font-size:14px;font-weight:600;margin:16px 0 4px}
-h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
-p{margin:0 0 8px}
-ul{margin:0 0 8px;padding-left:18px}
-li{margin:0 0 4px}
-li::marker{color:var(--muted)}
-a{color:var(--accent);text-decoration:none}
-code{font:12px ui-monospace,monospace}
-.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
-.announce p:last-child{margin:0}
-.announce strong{color:var(--accent)}
-body>:first-child{margin-top:0}</style>
-<h3>Changed</h3>
-<ul><li>Clicking Dimble's Siri now opens Type to Siri, like a click on Apple's own Siri icon, and a second click closes it. For voice, right-click it and pick "Talk to Siri" (<a href="https://github.com/fif7y/dimble/issues/83">#83</a>, thanks @swhitlow).</li></ul>
-<h3>Fixed</h3>
-<ul><li>⌥-click on the clock turns Do Not Disturb on and off with "Clicking the clock opens Notification Center" turned off too (<a href="https://github.com/fif7y/dimble/issues/92">#92</a>, thanks @juanfcocontreras).</li><li>Applying a change in Settings › Menu Bar no longer leaves blank space right of the chevron while it moves your icons. Camera and Media each took a slot there whenever they were idle.</li></ul>
-]]></description>
-            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.3/Dimble-0.3.3-beta.3.dmg" length="5461513" type="application/octet-stream" sparkle:edSignature="ST3kK/GxLCdqLsu40DD85tUbcUDH2uiccu8+LBXtuHK+X3p+/Zx914dIxPWAfa43c1Z451r/NuOSvnOKtE9kBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.3/Dimble74-73.delta" sparkle:deltaFrom="73" length="259738" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gsjtkNuD73/bEscIuwk4f16kmQtMeHAQ9BfSoxFDTZ8ir8tJNap7FDzPSVTpn7Kn/1Sn/7PAli13En1DdW+aCg=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.3/Dimble74-72.delta" sparkle:deltaFrom="72" length="283422" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wlhcoYaE6I/DAagpFrr5SfdRSmJ37M4P/pQjWNOrqwqjGZFgMKIVyC4INNNTu+ciu6hjrkoz0tI6b6FZYg8UBw=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.3/Dimble74-71.delta" sparkle:deltaFrom="71" length="311062" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fSb2Y0u4qX0rFfUGzTQs3LMtXyMmFefXVjmAOv/9bnIaY5c90DATQt70Cy+KTpy2nNLS4RIW3wr11mbKEmDQCg=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.3/Dimble74-70.delta" sparkle:deltaFrom="70" length="310854" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mFldt8m/h8PpvK6fE2stU1dvQWsQSCrcauJD7RB7G7wCRQ9iRb8vc/6yG+81kMjGqczZC0Bd+nl+eVtXT+zGCA=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.3-beta.3/Dimble74-69.delta" sparkle:deltaFrom="69" length="2348874" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mXIyhBufuCzH9ZBy0XgyP4w2j6myLRlUqVvvsYVQDAgUnvVxYMo7FJC6nCLI17/B0cNtVYCgVVPXLQSwAXSdDQ=="/>
             </sparkle:deltas>
         </item>
         <item>
