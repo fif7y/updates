@@ -3,6 +3,46 @@
     <channel>
         <title>Nook</title>
         <item>
+            <title>0.3.4-beta.1</title>
+            <pubDate>Thu, 29 Oct 2026 18:26:24 -0400</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>82</sparkle:version>
+            <sparkle:shortVersionString>0.3.4-beta.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
+body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+h2{font-size:14px;font-weight:600;margin:16px 0 4px}
+h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+p{margin:0 0 8px}
+ul{margin:0 0 8px;padding-left:18px}
+li{margin:0 0 4px}
+li::marker{color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+code{font:12px ui-monospace,monospace}
+.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
+.announce p:last-child{margin:0}
+.announce strong{color:var(--accent)}
+body>:first-child{margin-top:0}</style>
+<div class="announce"><p><strong>Your Live Activities show again.</strong> macOS takes them off the menu bar while Dimble hides your icons. Now, while one runs, its pill sits next to the « and a click opens its card, the way it would without Dimble (<a href="https://github.com/fif7y/dimble/issues/106">#106</a>, thanks @supryan). It's on by default.</p></div>
+<h3>New</h3>
+<ul><li>Live Activities show while Dimble hides your icons. The Shortcuts run indicator is one of them (<a href="https://github.com/fif7y/dimble/issues/107">#107</a>, thanks @artemc). While one runs, the system icons Dimble hides come back too, and they hide again when it ends. It needs Screen Recording, without it the pill stays hidden. Settings › Menu Bar › "Show Live Activities" turns it off.</li><li>A Live Activities item, in Settings › Menu Bar. It's there only while an activity runs, and a click brings the real pills back.</li><li>If you use the Timer item, it now shows the Clock app's timer while Dimble hides your icons, whether you started it in Clock or with Siri. It counts down, pauses and rings, and it's gone as soon as you cancel or dismiss it. Pick "While a timer runs" on the Timer row in Settings › Menu Bar to keep it off the bar until one starts.</li><li>A Wide Chevron icon in Settings › General › Icon, right after the Chevron (<a href="https://github.com/fif7y/dimble/issues/101">#101</a>, thanks @jmstacey). It's the chevron from the README animation, for anyone who finds the system one too narrow.</li></ul>
+<h3>Changed</h3>
+<ul><li>The Focus and Time Machine items get the same choice as the Timer. Pick "While a Focus is on" or "While backing up" on their row in Settings › Menu Bar to keep them off the bar until a Focus starts or a backup runs.</li><li>A function key can be a shortcut on its own, like F8 for Notification Center (<a href="https://github.com/fif7y/dimble/issues/103">#103</a>, thanks @TigerCat-hu). Before, the recorder beeped unless you held ⌘, ⌥ or ⌃. A key macOS still uses is refused as before.</li><li>Settings › About › "Report an issue" opens the bug form with your versions and display setup filled in. It also shows <code>dimble.log</code> in Finder, so you can drag it in.</li><li>Without Screen Recording, the Animation styles and "Show Live Activities" show they're off and say why, with a link to turn it on. Before, they looked like they worked.</li></ul>
+<h3>Fixed</h3>
+<ul><li>Mission Control no longer shows a dark box at the top of the screen, over the Spaces bar (<a href="https://github.com/fif7y/dimble/issues/108">#108</a>, thanks @garanda21). It was the picture Dimble keeps over a menu bar so its icons still look hidden, for example while your other display shows all its icons.</li><li>Wide items in the row, like a battery with its percentage, keep their menu bar size (<a href="https://github.com/fif7y/dimble/issues/102">#102</a>, thanks @InTheManXG). Every tile used to be the same width, so they were shrunk to fit.</li><li>The panel no longer jumps on its first open after Dimble starts (<a href="https://github.com/fif7y/dimble/issues/104">#104</a>, thanks @swhitlow). Dimble now keeps its pictures of your icons between launches and gets their order right from the start.</li><li>Dimble spots an icon that comes from a small helper app, like ChatGPT Classic's, and offers its launcher in the layout editor (<a href="https://github.com/fif7y/dimble/issues/103">#103</a>, thanks @TigerCat-hu). Before, you had to add it in App launchers yourself.</li></ul>
+]]></description>
+            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.1/Dimble-0.3.4-beta.1.dmg" length="5998506" type="application/octet-stream" sparkle:edSignature="pJWjT50FGBj73X6TDhcj7tliIPQsKXzs3276AW22lkbtzvNGekv/eK3E4bsDiamZ6xMk+MnOnHAMA0P7m05lDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.1/Dimble82-81.delta" sparkle:deltaFrom="81" length="878590" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="A/kF3oS4AAJMOfoLCqeiER2jqHifztJ/D2vKNGb4aWx6j6I5iFCLnF4KakWomubIvs3IiANi/zAAQzL1C157Bg=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.1/Dimble82-80.delta" sparkle:deltaFrom="80" length="894118" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="yuc2I8Xi3IfNa3IYSUJyz4X198AvqpT7Gmsurh52NWZvi66PkPGjSuDBsnpGdSRVRnZ6eblzGGQDzPcqXTPEDA=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.1/Dimble82-79.delta" sparkle:deltaFrom="79" length="894862" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="at/s9H4kiPO3EcZjLoAutYIZLHMLyC4tj41GPNYpGKJUlG5Bz8e2tsJudUCQr5H0boAvTTqepxgbJ1bzVNXZDA=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.1/Dimble82-78.delta" sparkle:deltaFrom="78" length="919190" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="iGXq9kcTt1UVPvyfiiKORzoLu0tI6qKPCI3WKw3vmaJ452rTUZCyoiI2E9bF8kno3mioZEpjW5/Zza+0QThACg=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.1/Dimble82-77.delta" sparkle:deltaFrom="77" length="923662" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6atUyc5lQ3cCiv/oROKkRvkyNt5YRsTdjBr1+Qa3Q6aEKldQQ9NCAG+04B3/BoIxIIvt9TqXSup8KhYYmrufDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.3</title>
             <pubDate>Sun, 25 Oct 2026 18:51:00 -0400</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
