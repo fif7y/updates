@@ -3,6 +3,43 @@
     <channel>
         <title>Nook</title>
         <item>
+            <title>0.3.4-beta.2</title>
+            <pubDate>Sat, 31 Oct 2026 09:30:29 -0400</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>83</sparkle:version>
+            <sparkle:shortVersionString>0.3.4-beta.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
+body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+h2{font-size:14px;font-weight:600;margin:16px 0 4px}
+h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+p{margin:0 0 8px}
+ul{margin:0 0 8px;padding-left:18px}
+li{margin:0 0 4px}
+li::marker{color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+code{font:12px ui-monospace,monospace}
+.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
+.announce p:last-child{margin:0}
+.announce strong{color:var(--accent)}
+body>:first-child{margin-top:0}</style>
+<h3>Fixed</h3>
+<ul><li>Hover works again when Dimble starts before macOS has confirmed its Accessibility access, like right after an update or when you first set it up (<a href="https://github.com/fif7y/dimble/issues/116">#116</a>, thanks @brijazz). Hover only worked while Dimble was the active app, and it didn't come back until you quit and reopened it. Now it comes back as soon as the access arrives.</li><li>Switching Spaces in Mission Control no longer leaves the Desktop names over your menu bar (<a href="https://github.com/fif7y/dimble/issues/108">#108</a>, thanks @garanda21). Dimble now waits for Mission Control to close before it takes a new picture of the bar. And with lots of Desktops, their names don't get cut off at your hidden icons anymore as Mission Control closes.</li><li>The Live Activity pill next to the « no longer sits in a box of the wrong background when your wallpaper isn't a flat color (<a href="https://github.com/fif7y/dimble/issues/120">#120</a>, thanks @fontme).</li><li>While a Live Activity shows, an icon set to show only when it matters, like Wi-Fi when it drops, comes out next to the « right away. It used to stay under the pill until the activity ended.</li><li>A piece of an old pill, or a dark strip beside it, no longer stays next to the « after your bar changes during a Live Activity.</li><li>The layout editor's Apply no longer comes back as "Apply (1)" right after you apply, with a "Dimble Items" tile out of place.</li><li>The Live Activities item takes its spot as soon as it shows. It used to wait for the next reveal.</li><li>A reveal or a tuck away that cuts off another one no longer stalls the animation (<a href="https://github.com/fif7y/dimble/issues/113">#113</a>, thanks @akshaymaloo).</li></ul>
+<h3>Also</h3>
+<ul><li>Safer updates (<a href="https://github.com/fif7y/dimble/issues/117">#117</a>, thanks @akshaymaloo). Each update's signature is checked before it's published. The release notes window doesn't load anything from the web and only opens https links. And Dimble checks every message it trades with its helper apps.</li></ul>
+]]></description>
+            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.2/Dimble-0.3.4-beta.2.dmg" length="6011942" type="application/octet-stream" sparkle:edSignature="44Sz6NI21qZlxvcbV8xMY6aDsnqvTRzWq6FSt9/1LneKPvkHJRh4ubhcb9VJ/HKFL62XoTiG4Wtm+s6blQhhBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.2/Dimble83-82.delta" sparkle:deltaFrom="82" length="463566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="smFEOd24peuhUd8KolylCMcyT855L3tIZM3i8CfY221Ep8TunLG8+c0kBtMV39Waz7NdtuohEykmGJLGB3nZCQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.2/Dimble83-81.delta" sparkle:deltaFrom="81" length="922950" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="43gwuDyNOWpQaq0e8zIPH4s53x4lDhMcGUkd+flP9N+7Roandg2JZKRPtOOir7RBnnkO/EQccOcRmgq5cDtJDg=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.2/Dimble83-80.delta" sparkle:deltaFrom="80" length="933474" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="e0qUpiSjXUs3D+DfRjzXxMJNR7Nc+KL5yjbXT/Ekt7ppoKYBCHwhCcGdeWrjLkLEAJKRKlL9tqmoZZKpI6p4Bw=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.2/Dimble83-79.delta" sparkle:deltaFrom="79" length="937378" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="92DI4pGo21MCsUv+hQGVK3GVf3nVD7BHXD+Rkj1osK1weqCx/HTH17br17GiHNIW9ROwlwGaB5sC9MPlJurKBQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.3.4-beta.2/Dimble83-78.delta" sparkle:deltaFrom="78" length="959338" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="tJ/O1PE7FhE4HC5L9K86sn1SQdIRIVZKxVc2/3cH9r3e+m/AileCqaCWEnxEkok9dfdyklq8kUzXTCPS2yx/CA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.4-beta.1</title>
             <pubDate>Thu, 29 Oct 2026 18:26:24 -0400</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
