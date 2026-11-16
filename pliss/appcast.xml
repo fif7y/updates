@@ -3,6 +3,44 @@
     <channel>
         <title>Nook</title>
         <item>
+            <title>0.4.1-beta.1</title>
+            <pubDate>Mon, 16 Nov 2026 07:22:11 -0500</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>96</sparkle:version>
+            <sparkle:shortVersionString>0.4.1-beta.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
+body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+h2{font-size:14px;font-weight:600;margin:16px 0 4px}
+h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+p{margin:0 0 8px}
+ul{margin:0 0 8px;padding-left:18px}
+li{margin:0 0 4px}
+li::marker{color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+code{font:12px ui-monospace,monospace}
+.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
+.announce p:last-child{margin:0}
+.announce strong{color:var(--accent)}
+body>:first-child{margin-top:0}</style>
+<div class="announce"><p><strong>Middle-click the chevron to show your hidden icons.</strong> @openforfuture asked for a way into Always Hidden that isn't a modifier or a second click. Settings › Behavior › Reveal has a row for it, set to nothing until you pick what it should show.</p></div>
+<h3>New</h3>
+<ul><li>Middle-clicking the chevron can reveal your hidden icons (<a href="https://github.com/fif7y/dimble/issues/149">#149</a>, thanks @openforfuture). Settings › Behavior › Reveal › "Middle-click reveals": nothing, Hidden and Always Hidden together, or Always Hidden on its own. It stays on nothing until you choose, so until then a middle click goes where it always went.</li></ul>
+<h3>Fixed</h3>
+<ul><li>A tooltip the bar put up holds the reveal while it's on screen (<a href="https://github.com/fif7y/dimble/issues/148">#148</a>, thanks @openforfuture). macOS draws tooltips above every window Dimble watches, so the rehide ran under one and took the icons away while you were still reading it. It now waits the way it waits for an open menu, under the same one-minute cap, and only for a tooltip in the bar's own band.</li><li>An open menu holds the reveal wherever you've left the pointer. The hold was read from where the pointer sat, so a menu you'd opened and walked away from didn't count.</li><li>Dimble tells an app's unnamed icons apart. Stats puts five modules in the bar and gives none of them a name, so Dimble read all five as one icon — one picture, one press target, and a count of the bar that was four icons short. Each one is its own item now. Hiding one module while another stays out isn't possible yet: macOS hides a whole app at a time.</li></ul>
+]]></description>
+            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.1/Dimble-0.4.1-beta.1.dmg" length="6366628" type="application/octet-stream" sparkle:edSignature="p92TOhV9k/oqNc6iyn8NyXWOGKMuffOF0ZiF2wDolRIirnbLFEm8E1iNiuiD5ft1OiW+gTw3dBQM2SBhoCbtDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.1/Dimble96-95.delta" sparkle:deltaFrom="95" length="431570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="8Gm5r16XIgmnmQy46XZ4ahC6CbGK7iZ3XerPHFWvtYSsPhmQXZxuEhN8ehT3xNVLiX9Aa8MYKScQ5mLyNDyWBQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.1/Dimble96-94.delta" sparkle:deltaFrom="94" length="431682" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1BRHjFSP4JrU1AZSIpxkO0LUx4MH3s4MQjvXO9RDzR9t5Y4T37kBqN966BHJQEThvQ02cDajaO3cG2DT4lNrCg=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.1/Dimble96-93.delta" sparkle:deltaFrom="93" length="626374" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="GZosbIgucP2jA+tfZJxQzqP0UZzWreDMm1c0bNmyFNiHGu9BSFIcwPPfdxUjskm/8xPv60tLQxhx40NXbov+AQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.1/Dimble96-92.delta" sparkle:deltaFrom="92" length="629210" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KErTMxtvqxhsti6ZTaR9OZZz/ghdTl1lHzNdXEhSqjpK0hakLokHkPsy+gua7IP8qeaNXQf3wl1o2EJroHhGDQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.1/Dimble96-91.delta" sparkle:deltaFrom="91" length="1015570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ayD9WKo3QahnXrKveQyQCpT4ih7Gwt/ISK/OKTzld08yTACmkQIjJV7X9zu3cp11Vj2Hl8FqZuv+dwkd9Lr8DA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.4.0</title>
             <pubDate>Sat, 14 Nov 2026 11:12:54 -0500</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
