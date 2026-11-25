@@ -3,6 +3,43 @@
     <channel>
         <title>Nook</title>
         <item>
+            <title>0.4.1-beta.9</title>
+            <pubDate>Wed, 25 Nov 2026 10:08:51 -0500</pubDate>
+            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>104</sparkle:version>
+            <sparkle:shortVersionString>0.4.1-beta.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
+body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
+h2{font-size:14px;font-weight:600;margin:16px 0 4px}
+h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+p{margin:0 0 8px}
+ul{margin:0 0 8px;padding-left:18px}
+li{margin:0 0 4px}
+li::marker{color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+code{font:12px ui-monospace,monospace}
+.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
+.announce p:last-child{margin:0}
+.announce strong{color:var(--accent)}
+body>:first-child{margin-top:0}</style>
+<h3>New</h3>
+<ul><li>fn C opens Control Center while your icons are hidden (<a href="https://github.com/fif7y/dimble/issues/179">#179</a>, thanks @mityeah). macOS ignores its own shortcut then, so Dimble opens it for you. There's nothing to set up. I tested it on macOS 27.3.</li></ul>
+<h3>Fixed</h3>
+<ul><li>macOS's recording indicator shouldn't stay on after you quit Dimble. It did when Dimble quit in the middle of taking a picture of the bar. If yours is stuck, <code>killall replayd</code> in Terminal clears it.</li><li>Old icons or a pill shouldn't stay at the left of the bar with a Live Activity up. It happened when an app launched just as Dimble took its picture of the bar. I tested it by forcing the two together, so tell me if you still see it.</li><li>Two Dimbles shouldn't run at once anymore. Quitting and opening it again right away could leave two.</li><li>Set Menu Bar Layout keeps the place of apps that aren't running. Setting the same layout again moved them to the left end of their section.</li><li>Shortcuts actions and <code>dimble://</code> links don't drag an icon while you hold a mouse button. They went ahead after 8 seconds. The icon moves once you let go.</li><li>With the clock in Always Hidden, Apply doesn't light up with nothing to move.</li></ul>
+]]></description>
+            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.9/Dimble-0.4.1-beta.9.dmg" length="6782260" type="application/octet-stream" sparkle:edSignature="kVJWw8a8dJRVRWa5U4xZ/XIpIL2C2f0Mcg9ri6FMsuBBEw0nZgfJg45s5VeI2yIgJ7elTMoSg7rL3cVS+UYrAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.9/Dimble104-103.delta" sparkle:deltaFrom="103" length="522746" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kYpi7eUhJURFICu9ELX6NcdS7KL3PHdRZ77WVL4yojzaz8q3LNB9Xx1KbkK8rkpN46rKjDYrpeeGPOarGnwnCg=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.9/Dimble104-102.delta" sparkle:deltaFrom="102" length="839490" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Iwon0w+6t5e2reUhgHwjHaoJeDAFdUfO9UdoLaJLV/GjGU1Qe7Pp2Wt9BuO2xDWywnsno/CuwoyjbEeySItnBQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.9/Dimble104-101.delta" sparkle:deltaFrom="101" length="877058" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1aA5dOGQ1QnuKOEQB8vQ1aaADXRjmKsjPY0r6TKg43oVe+wDkenh4kcr9jgI1PvCGq4gE7YTbMEEodZpBxB2AA=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.9/Dimble104-100.delta" sparkle:deltaFrom="100" length="955254" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="d/VmNNCVUAK+fBccTy8OKVqE0qD26X31iGoz6T6aOfYsTnIjPsZ91C1JFMKuPTdWdFxpXhycFTuMsAHvCqEmDQ=="/>
+                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.9/Dimble104-99.delta" sparkle:deltaFrom="99" length="1008926" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IfPxOrXTr/L6u6qxVaZ+QXcujbn8nbOW1cDVyCLUlwZNC3miwFBVjNTOji7dYE6JWtDt12MckkUnpaXAKKEHBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.4.1-beta.8</title>
             <pubDate>Tue, 24 Nov 2026 17:43:31 -0500</pubDate>
             <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
@@ -75,43 +112,6 @@ body>:first-child{margin-top:0}</style>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.7/Dimble102-99.delta" sparkle:deltaFrom="99" length="712194" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lI/pYcfKGgrvWxLjXyriTo6SEjXcbsRW4PfPhyvpMslX5+Dg6MB7ZVrwVfXZDBLI9I88/JIXkPKfUg8JEXORBg=="/>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.7/Dimble102-98.delta" sparkle:deltaFrom="98" length="814630" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="EXlYBqr5CN8AKtX3U+/5m635ooyxqiXzSK1D0sAPCPmUp4H5V/eCp5YLn6SsaZ8y5B3fUAopW1Oi6oeNVg+1Cw=="/>
                 <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.7/Dimble102-97.delta" sparkle:deltaFrom="97" length="858054" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ljZsNvozbkVfERVkX776VYIoblTerrhNZ5LG8pm6lgMlBDlfKWzbzds42Ds9LPCvQjYcL2QcZUiEKuJOWBcHAQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.4.1-beta.6</title>
-            <pubDate>Sun, 22 Nov 2026 10:43:26 -0500</pubDate>
-            <sparkle:fullReleaseNotesLink>https://github.com/fif7y/dimble/releases</sparkle:fullReleaseNotesLink>
-            <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>101</sparkle:version>
-            <sparkle:shortVersionString>0.4.1-beta.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<style>:root{color-scheme:light dark;--fg:#1d1d1f;--muted:#6e6e73;--accent:#6841ed;--tint:rgba(104,65,237,.09)}
-@media (prefers-color-scheme:dark){:root{--fg:#f2f2f7;--muted:#98989f;--accent:#a28cf8;--tint:rgba(126,95,242,.2)}}
-body{margin:0;padding:12px 16px 14px;font:13px/1.45 -apple-system,system-ui,sans-serif;color:var(--fg);-webkit-font-smoothing:antialiased}
-h2{font-size:14px;font-weight:600;margin:16px 0 4px}
-h3{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
-p{margin:0 0 8px}
-ul{margin:0 0 8px;padding-left:18px}
-li{margin:0 0 4px}
-li::marker{color:var(--muted)}
-a{color:var(--accent);text-decoration:none}
-code{font:12px ui-monospace,monospace}
-.announce{background:var(--tint);border-radius:10px;padding:10px 12px;margin:0 0 12px}
-.announce p:last-child{margin:0}
-.announce strong{color:var(--accent)}
-body>:first-child{margin-top:0}</style>
-<h3>New</h3>
-<ul><li>A shortcut shows Always Hidden alone (<a href="https://github.com/fif7y/dimble/issues/149">#149</a>, thanks @openforfuture). It's in Settings › General › Shortcuts as "Show Always Hidden only", empty until you record one. It does what a middle click set to "Always Hidden only" does. Always Hidden takes Hidden's place when Hidden is out, and the same key puts it away.</li><li>A Shortcut button's icon can be picked in Settings (<a href="https://github.com/fif7y/dimble/issues/162">#162</a>, thanks @Hydrogenxy). macOS keeps a shortcut's own icon in a folder only Full Disk Access opens, so Dimble can't show it. The button's row gets the same icon chooser as an App launcher, symbols only.</li></ul>
-<h3>Fixed</h3>
-<ul><li>The Row's icons should be sharp on both screens when a 1x display is main (<a href="https://github.com/fif7y/dimble/issues/156">#156</a>, thanks @avocadoattack). Beta.5 took each icon from the MacBook's sharper bar, and the 1x display then drew that picture shrunk to half, which can soften it. Dimble now keeps both pictures, and each screen's Row draws the one cut from a bar of its own scale. I haven't tested it with a 1x display as main yet, so tell me on the issue if either screen still looks soft.</li><li>An icon the MacBook's bar doesn't draw clear (past the notch or Island, or behind its «) is enlarged with crisp edges on that screen (<a href="https://github.com/fif7y/dimble/issues/156">#156</a>). Dimble can only cut it from the 1x display, and it was scaled up blurry. Its clean edges are now pulled tight while faint detail, like a battery's digits, stays smooth. On 9 real icons it came out twice as close to the true 2x picture.</li><li>Pressing an icon in the Panel opens it in a full-screen app with the menu bar hidden (found while looking into <a href="https://github.com/fif7y/dimble/issues/166">#166</a>). macOS keeps a band over the top edge there, and the press landed on it, so 0 of 4 presses opened anything. Dimble now waits for the bar to come down first, up to a second.</li><li>An Apply in a full-screen app no longer marks an app as one Dimble can't move. Its drag bounced off the hidden bar, and three bounces made that stick for good. Dimble now waits, and the drag lands once the bar is back.</li><li>Docked, a press on an icon behind macOS's « opens that icon, not Dimble's own menu. Right after the « expands, macOS draws the bar twice and one copy lags behind. Dimble aimed at the lagging one, and 4 of 4 presses opened Dimble's menu with my test app. It now clicks the copy the bar really shows.</li><li>A button you add in Settings while the bar is full goes to its place in Visible. It sat behind macOS's « at the far left, out of sight, until the next reveal.</li></ul>
-]]></description>
-            <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.6/Dimble-0.4.1-beta.6.dmg" length="6502488" type="application/octet-stream" sparkle:edSignature="wE8hCKtnXbof3UVMmxpWhVuv3EBPe8/3tqkKJ+l3KHwirfRaa4bX+2KuiDWsPDXgl7IK+CwaNnWIwss8wpQgDQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.6/Dimble101-100.delta" sparkle:deltaFrom="100" length="579806" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="aoKcV9moQ9KDxYUCEmY9UW5rnD9FEigKw/nVQZHX9+QZfyVZJbprgpdg/8/yvkW/mstXPXTZjLPCcQtrzWRmAg=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.6/Dimble101-99.delta" sparkle:deltaFrom="99" length="669570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="O14etwoAvgsr8kuXMl6HCCyjHSOxw4cYsnoK8871ELgMLwTiA1WS7JdpFN4k3+W2OnZ+I8NAkntFgS84HDZPAA=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.6/Dimble101-98.delta" sparkle:deltaFrom="98" length="777514" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rC4oWAYcBVtlL89VCcQSRbZcBVLxMTtw7sNPcgIbOHQw4vRA+ZVF+J02W2Wu6f6YTA+eIU5tGqt7b32aooYmAQ=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.6/Dimble101-97.delta" sparkle:deltaFrom="97" length="822642" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Ld2eGJc56/pkLdBt8trV7aMn/7uurfXEGAHzxhiTYz6cbtuTQEziyhyTYQnt/f8BLU1fOFPJMWsMssIecvyrAg=="/>
-                <enclosure url="https://github.com/fif7y/dimble/releases/download/v0.4.1-beta.6/Dimble101-96.delta" sparkle:deltaFrom="96" length="845790" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lDyDYP7hI8itQ1vPwwpyFhDtvyIVN+6LLlvud1cwTj4tG4Yske3K+ohU7hOHTAajt49rbsw4qEcG8lINGlqCCQ=="/>
             </sparkle:deltas>
         </item>
         <item>
